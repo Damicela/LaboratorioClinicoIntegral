@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 const Header = () => {
     return (
         <>
-        <header className="flex  bg-sky-700 justify-between">
+        <header className="flex  header justify-between">
             <Link to={'/'}>
                 <img src={Logolab} alt="logo-laboratorio" className='size-32 ml-20 rounded-md'/>
             </Link>
@@ -24,7 +24,7 @@ const Header = () => {
             
            
         </header>
-        <main className='flex justify-center md: w-full bg-sky-500 overflow-scroll'>
+        <main className='flex justify-center md:w-full bg-gray-100'>
                 <Outlet/>
         </main>
         </>

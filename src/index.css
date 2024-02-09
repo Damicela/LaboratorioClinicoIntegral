@@ -4,37 +4,33 @@
 
 
 
-.s1 {
-    background-image: url('assets/images/lab1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-}
-
-.s2 {
-    background-image: url('assets/images/lab2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-}
-
 .s3 {
-    background-image: url('assets/images/lab3.jpg');
+    background-image: url('assets/images/slide1.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
 }
 
 .s4 {
-    background-image: url('assets/images/lab4.jpg');
+    background-image: url('assets/images/slide2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
 }
 
 .s5 {
     background-image: url('assets/images/lab5.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+}
+
+.header {
+    background-color: #1A4082;
+}
+
+.resultados {
+    text-shadow: 3px 3px 2px rgb(25, 45, 102);
+}
+
+ 
+.footer {
+    background-color: #1A4082;
 }

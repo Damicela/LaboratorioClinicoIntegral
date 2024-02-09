@@ -2,10 +2,12 @@
 
 const Footer = () => {
     return (
-        <>
-        <div className="bg-blue"></div>
-        <h1>desde footer!!</h1>
-        </>
+      
+        <div className="footer h-52">
+            <h1>desde footer!!</h1>
+        </div>
+        
+        
     )
 }
 

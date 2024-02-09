@@ -5,7 +5,8 @@ export default {
     extend: {},
   },
   plugins: [
-    import('@tailwindcss/typography')
+    import('@tailwindcss/typography'),
+    import('@tailwindcss/forms')
   ],
 }
 

@@ -1,6 +1,6 @@
 const Nosotros = () => {
   return (
-    <div className="w-3/5 mt-20 bg-white shadow-xl rounded-3xl border">
+    <div className=" bg-white shadow-xl">
       <article className="flex-auto justify-center px-10">
         <h1 className="font-bold text-blue-700 text-3xl text-center p-10 uppercase">Misión</h1>
         <p className="text-justify text-xl">
@@ -29,9 +29,9 @@ const Nosotros = () => {
         En resumen, nuestra visión es convertirnos en el laboratorio clínico integral preferido por pacientes, médicos y asociados, reconocidos por nuestra excelencia en el servicio, la precisión en los resultados y el compromiso con el bienestar de las personas y el cuidado del medio ambiente. Buscamos marcar la diferencia en la vida de nuestros pacientes, aportando conocimiento, innovación y calidad en cada análisis que realizamos.
        </p>
       </article>
-      <article className="justify-center px-10 py-10">
+      <article className="justify-center px-10 pb-10">
         <h1 className="font-bold text-blue-700 text-3xl text-center p-10 uppercase">objetivos</h1>
-        <ol className="list-decimal">
+        <ol className="list-decimal text-xl">
             <li>
             Proporcionar resultados de análisis clínicos rápidos y precisos para apoyar la toma de decisiones médicas.
             </li>

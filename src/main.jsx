@@ -8,6 +8,7 @@ import Nosotros from './components/Nosotros.jsx'
 import Contacto from './components/Contacto.jsx'
 import Servicios from './components/Servicios.jsx'
 import BuscarServicio from './components/BuscarServicio.jsx'
+import PrivacyPolicy from './components/Privacy-policy.jsx'
 
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/buscarservicio',
         element: <BuscarServicio/>
+      },
+      {
+        path: '/privacy-policy',
+        element: <PrivacyPolicy/>
       }
   
 ]
