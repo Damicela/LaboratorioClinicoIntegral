@@ -17,6 +17,8 @@ export default class PauseOnHover extends Component {
       pauseOnHover: true,
       adaptiveHeight: true,
       arrows: false,
+     
+    
     };
     return (
       <div className="w-full">
@@ -37,7 +39,7 @@ export default class PauseOnHover extends Component {
                   continuos...
                 </p>
                 <Link to={'/contacto'}>
-                <button className="bg-blue-900 text-white text-lg font-bold w-32 h-10 self-center">Contáctanos</button>
+                <button className="bg-indigo-600 text-white text-lg font-bold w-32 h-10 self-center">Contáctanos</button>
                 </Link>
               </div>
               <div className="md:mt-44 md:ml-40 size-96">

@@ -5,13 +5,13 @@ import Footer from '../components/Footer'
 const Header = () => {
     return (
         <>
-        <header className="flex  header justify-between">
+        <header className="flex  header justify-between h-20">
             <Link to={'/'}>
-                <img src={Logolab} alt="logo-laboratorio" className='size-32 ml-20 rounded-md'/>
+                <img src={Logolab} alt="logo-laboratorio" className='h-20 ml-20 rounded-md'/>
             </Link>
             <div className='flex self-center'>
                  <h1 className='text-4xl text-slate-100'>
-                     Laboratorio Clinico Integral
+                     Laboratorio Clínico Integral
                   </h1>
             </div>
            
