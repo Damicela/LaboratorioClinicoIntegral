@@ -22,16 +22,11 @@
     background-repeat: no-repeat;
 }
 
-.header {
-    background-color: #1A4082;
-}
-
 .resultados {
     text-shadow: 3px 3px 2px rgb(25, 45, 102);
 }
 
- 
-.footer {
+.bg-branding {
     background-color: #1A4082;
 }
 

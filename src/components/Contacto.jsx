@@ -10,18 +10,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Contacto() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="flex flex-wrap py-10 gap-16">
-      <div className="isolate bg-white px-6 py-10 sm:py-10 lg:px-8 text-center ">
+    <div className="flex flex-col px-0 py-6 md:flex-row md:py-10 md:gap-16">
+      <div className=" bg-white px-0 md:px-6 py-10 sm:py-10 lg:px-8 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Información
         </h2>
-        <div className="flex items-center md:mt-20 max-w-xl sm:mt-20 w-96 mb-5 text-left">
+        <div className="flex items-center px-6 py-6 max-w-xl mt-20 mb-5 text-left border-b-[2px]">
           <IconContext.Provider value={{ color: "white", size: "2em" }}>
-            <div className="bg-blue-800 w-12 h-12 rounded-md mr-10 py-2 px-2">
+            <div className="bg-blue-800 w-12 h-12 rounded-md mr-5 py-2 px-2">
               <BsTelephone />
             </div>
           </IconContext.Provider>
@@ -30,10 +30,10 @@ export default function Example() {
             <h3 className="text-lg text-gray-500">755-554-0143</h3>
           </div>
         </div>
-        <hr />
-        <div className="flex items-center md:mt-20 max-w-xl sm:mt-20 w-96 mb-5 text-left">
+        
+        <div className="flex items-center px-6 md:mt-20 py-10 max-w-xl sm:mt-20 mb-5 text-left border-b-[2px]">
           <IconContext.Provider value={{ color: "white", size: "2em" }}>
-            <div className="bg-blue-800 w-12 h-12 rounded-md mr-10 py-2 px-2">
+            <div className="bg-blue-800 w-12 h-12 rounded-md mr-5 py-2 px-2">
               <AiOutlineMail />
             </div>
           </IconContext.Provider>
@@ -44,8 +44,8 @@ export default function Example() {
             </h3>
           </div>
         </div>
-        <hr />
-        <div className="flex items-center mx-auto md:mt-20 max-w-xl sm:mt-20 w-96 mb-5 text-left">
+        
+        <div className="flex items-center px-6 py-10 mx-auto md:mt-20 max-w-xl sm:mt-20 mb-5 text-left border-b-[2px]">
           <IconContext.Provider value={{ color: "white", size: "2em" }}>
             <div className="bg-blue-800 w-12 h-12 rounded-md mr-5 py-2 px-2">
               <MdOutlinePlace />
@@ -53,16 +53,16 @@ export default function Example() {
           </IconContext.Provider>
           <div className="">
             <h2 className="text-2xl font-medium text-gray-900">Dirección</h2>
-            <h3 className="text-lg text-gray-500">
-              Calle Saturno, Esq. Paseo de la Boquita Col. Industrial
+            <h3 className="text-lg text-gray-500 text-left">
+              Calle Saturno, Esq. Paseo <br /> de la Boquita  Col. Industrial <br />
               Zihutanejo, Gro. CP.40880
             </h3>
           </div>
         </div>
-        <hr />
+        
       </div>
-      <div className="isolate bg-white px-6 sm:py-10 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+      <div className=" bg-white px-6 py-6 md:px-6 lg:px-8">
+        <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Contáctanos
           </h2>

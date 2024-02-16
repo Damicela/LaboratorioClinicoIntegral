@@ -23,9 +23,9 @@ export default class PauseOnHover extends Component {
     return (
       <div className="w-full">
         <Slider {...settings}>
-          <div className="s3 py-10">
-            <div className="md:flex justify-between px-60 ">
-              <div className="md:w-3/6 flex flex-col justify-evenly text-center">
+          <div className="s3">
+            <div className="md:flex md:justify-between px-6 md:px-60 ">
+              <div className="md:w-3/6 flex flex-col py-16 justify-evenly text-center">
                 <p className="bg-blue-900 text-xl text-gray-100">
                   Equipos de análisis clínicos de última generación
                 </p>
@@ -39,12 +39,12 @@ export default class PauseOnHover extends Component {
                   continuos...
                 </p>
                 <Link to={'/contacto'}>
-                <button className="bg-indigo-600 text-white text-lg font-bold w-32 h-10 self-center">Contáctanos</button>
+                <button className="bg-indigo-600 text-white text-lg font-bold w-32 h-10 self-center my-10">Contáctanos</button>
                 </Link>
               </div>
-              <div className="md:mt-44 md:ml-40 size-96">
+              <div className="ml-14 md:mt-44 md:ml-40 w-60 h-60">
             <img
-              className="size-80 shadow-2xl shadow-black"
+              className="w-full shadow-2xl shadow-black"
               src="assets/machine.jpg"
               alt="machine"
             />
