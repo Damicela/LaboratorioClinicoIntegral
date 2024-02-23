@@ -6,9 +6,9 @@ import Footer from '../components/Footer'
 
 function App() {
     return (
-      <div className='h-screen flex flex-col justify-between w-full'>
+      <div className='bg-gray-100 flex flex-col justify-between w-full'>
         <Header/>
-        <main className='flex justify-center bg-gray-100'>
+        <main className='flex justify-center  '>
            <Outlet/>
         </main>
         <Footer/>

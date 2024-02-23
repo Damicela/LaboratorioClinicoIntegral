@@ -1,6 +1,6 @@
 const Nosotros = () => {
   return (
-    <div className=" bg-white shadow-xl">
+    <div className=" bg-white shadow-xl border border-red-500">
       <article className="flex-auto justify-center px-10">
         <h1 className="font-bold text-blue-700 text-3xl text-center p-10 uppercase">Misión</h1>
         <p className="text-justify text-xl">

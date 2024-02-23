@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './components/Layout.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import PauseOnHover from './components/Scroll.jsx'
+import MainPage from './components/MainPage.jsx'
 import Nosotros from './components/Nosotros.jsx'
 import Contacto from './components/Contacto.jsx'
 import Servicios from './components/Servicios.jsx'
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <PauseOnHover/>
+        element: <MainPage/>
       },
       {
         path: '/nosotros',
