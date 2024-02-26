@@ -30,7 +30,7 @@ const Servicios = ({ servicios }) => {
 
 const ServiceRender = () => {
   return (
-    <div className=" bg-gray-100 px-2 md:w-2/3 ">
+    <div className=" bg-gray-100 px-2 md:w-2/3">
       {servicios.map((servicio, key) => (
         <Servicios key={key} servicios={servicio} />
       ))}

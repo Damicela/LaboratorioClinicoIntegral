@@ -30,7 +30,7 @@ import "slick-carousel/slick/slick-theme.css";
                 </h1>
                 <p className="text-xl font-medium mt-20">
                   Nuestro laboratorio cuenta con equipamiento de análisis
-                  clínico de ultima generación, con una precisión y
+                  clínico de última generación, con una precisión y
                   confiabilidad avalada por test de calidad y calibración
                   continuos...
                 </p>
@@ -60,9 +60,9 @@ import "slick-carousel/slick/slick-theme.css";
                   Registro y control de resultados
                 </h1>
                 <p className="text-xl font-medium mt-20">
-                  Contamos con software espacializado para el registro, control
-                  de muestras, asi como envio de resultados via email, agendar
-                  citas, historico de servicios entre otros...
+                  Contamos con software espacializado para el registro y control
+                  de muestras, así como envio de resultados via email, agendar
+                  citas, histórico de servicios entre otros...
                 </p>
                 <Link to={"/contacto"}>
                   <button className="bg-indigo-600 rounded-lg text-white text-lg font-bold w-40 h-10 self-center my-10">
@@ -89,9 +89,9 @@ import "slick-carousel/slick/slick-theme.css";
                   Certificados y actualizados
                 </h1>
                 <p className="text-xl font-medium mt-20">
-                  Todo nustro personal tecnico esta titulado y cuanta con las
-                  certificaciones para manejar los mas altos estandares en
-                  analisis quimicos clinicos
+                  Todo nuestro personal técnico esta titulado y cuenta con las
+                  certificaciones para manejar los más altos estandares en
+                  análisis químicos clínicos
                 </p>
                 <Link to={"/servicios"}>
                   <button className="bg-indigo-600 rounded-lg text-white text-lg font-bold w-32 h-10 self-center my-10">
