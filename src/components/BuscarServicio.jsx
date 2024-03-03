@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PdfRender from "./PdfRender";
-import { RxDotFilled } from "react-icons/rx";
+
 
 const FetchService = () => {
   const [servicio, setServicio] = useState("");
@@ -25,8 +25,8 @@ const FetchService = () => {
       setMessage(result.message);
       setCode(result.code);
       result.service ? setPdf(result.service.urls) : "";
-      setName(result.service.name)
-      setFecha(new Date(result.service.created_at).toLocaleDateString())
+      setName(result.service ? result.service.name: '')
+      setFecha(result.service ? new Date(result.service.created_at).toLocaleDateString(): '')
     }
   };
 
@@ -47,14 +47,14 @@ const FetchService = () => {
           <input
             type="search"
             placeholder="Ej. ADG523MLNH"
-            className="border-2 border-gray-400 mb-10 text-xl h-10 px-2  mr-4 rounded-md"
+            className="border-2 border-gray-400 mb-10 text-md h-10 px-2  mr-2 rounded-md"
             value={servicio}
             onChange={(e) => setServicio(e.target.value)}
           />
         </form>
         <button
           type="button"
-          className="rounded-md bg-indigo-600 px-3.5 h-10 text-center ml-5 text-lg 
+          className="rounded-md bg-indigo-600 px-3.5 h-10 text-center text-lg 
           font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline
            focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           onClick={getService}
@@ -65,30 +65,27 @@ const FetchService = () => {
 
       {code == "not_pay" && (
         <div>
-          <p className="text-red-600 text-xl flex items-center">
-            <RxDotFilled />
+          <p className="text-red-600 text-xl flex px-5 ">
             {message}
           </p>
         </div>
       )}
       {code == "found" && (
-        <div className="flex-col px-5 ">
-          <p className="text-green-800 text-xl flex items-center py-2 justify-start">
-            <RxDotFilled />
+        <div className="flex-col px-5 w-96 md:w-auto overflow-clip">
+          <p className="text-green-800 text-xl flex py-2 justify-center">
             {message}
-          </p>
-          <div className="flex items-center gap-6">
-            <h2 className="py-2 text-lg px-2">{name}</h2>
+          </p> 
+          <div className="flex items-center justify-center gap-6">
+            <h2 className="py-2 text-lg">{name}</h2>
           <p>{fecha}</p>
           </div>
           
-          <div className="flex flex-col cursor-pointer px-2">
+          <div className="flex flex-col cursor-pointer">
             {pdf.map((e, i) => (
                 
                  <PdfRender 
                  test={!e["name" + i] ? e["path" + i] : e["name" + i]} 
-                 path={e["path" + i]}
-                 name={name} 
+                 path={e["path" + i]} 
                  key={i}
                  />
             ))}
@@ -97,8 +94,8 @@ const FetchService = () => {
       )}
       {code == "not_found" && (
         <div>
-          <p className="text-orange-500 text-xl flex items-center">
-            <RxDotFilled />
+          <p className="text-orange-500 text-xl flex px-5">
+            
             {message}
           </p>
         </div>
@@ -110,4 +107,5 @@ const FetchService = () => {
 // AAG315KPD no pago
 // AAG522MLNH disponible
 // AF466JPA varios servicios
+// AD50KPD varios servicios viejo
 export default FetchService;

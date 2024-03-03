@@ -9,6 +9,8 @@ import Contacto from './components/Contacto.jsx'
 import Servicios from './components/Servicios.jsx'
 import BuscarServicio from './components/BuscarServicio.jsx'
 import PrivacyPolicy from './components/Privacy-policy.jsx'
+import BarCodeHttp from './components/BarCodeHttp.jsx'
+import { loader as getBarcodeLoader } from './components/BarCodeHttp.jsx'
 
 
 
@@ -40,6 +42,11 @@ const router = createBrowserRouter([
       {
         path: '/privacy-policy',
         element: <PrivacyPolicy/>
+      },
+      {
+        path: '/services-admin/:barcode',
+        element: <BarCodeHttp/>,
+        loader: getBarcodeLoader
       }
   
 ]

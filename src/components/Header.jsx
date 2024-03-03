@@ -17,7 +17,7 @@ const Header = () => {
       </h1>
       <SidebarMenu/>
 
-      <nav className="hidden md:flex gap-4 mr-0 lg:mr-10 text-slate-50 lg:text-2xl self-end">
+      <nav className="hidden md:flex gap-4 mr-0 lg:mr-10 text-slate-50 lg:text-xl self-end">
         <Link to={"/contacto"} className="hover:text-slate-300 cursor-pointer">
           Contacto
         </Link>
